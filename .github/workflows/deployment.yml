@@ -1,5 +1,12 @@
 name: Deploy Project
-on: [push, workflow_dispatch]
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - 'dev-*' # dev-new dev-button
+    paths-ignore:
+      - '.github/workflows/*'
 jobs:
   test:
     runs-on: ubuntu-latest
