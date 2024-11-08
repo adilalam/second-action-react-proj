@@ -10,6 +10,8 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v3  # Action to set up Node.js
+        with:
+          node-version: '16'
 
       - name: Install dependencies
         run: npm install  # Custom command to install dependencies
@@ -27,6 +29,8 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v3  # Action to set up Node.js
+        with:
+          node-version: '16'
 
       - name: Install dependencies
         run: npm install  # Custom command to install dependencies
